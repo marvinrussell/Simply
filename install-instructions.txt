@@ -1,0 +1,21 @@
+How to Install and Setup up Simply:
+
+1. Unzip downloaded folder
+2. Upload and activate zip file called “simply-sct.zip” to Wordpress themes
+3. Go to Settings > Reading > Front page Displays > Select “Your Latest Posts” and save
+4. Install Contact Form Add - https://wordpress.org/plugins/contact-form-add/ to display a contact form on contact page.
+5. To install the Simply sample data go to Tools > Import > WordPress > Install. Then select the sample-data.xml file in the folder you downloaded from SuperCleanThemes.com
+
+
+Logo
+Change the logo name by going to Customize > Site Identity > Site Title. You can also go to Settings > General > Site Title.
+Add a image logo by going to Appearance > Editor > header.php. Replace the below line of code and enter the correct image URL.
+
+(Text Logo)
+<a class="brand" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"> <?php bloginfo('name'); ?></a>
+
+(Image Logo)
+<a class="brand" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><img src="http://mysiteauditor.com/blog/wp-content/uploads/2015/04/seo-blog.png"></a>
+
+Footer
+To edit the footer go to Appearance > Editor > footer.php
